@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DynaPuff:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+font-family: "DynaPuff";
+}
+
+p, a {
+font-family: Comic Neue;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: blueviolet;
+    color: white;
+}
+
+header > h1 {
+    display: inline;
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+}
+
+header > nav {
+    display: inline-block;
+}
+
+header > nav > ul {
+    display: inline-block;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+}
+
+header > nav > ul > li > a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+header > nav > ul > li > a:hover {
+background-color: rgb(149, 100, 195);
+}
+
+/* MAIN */
+main {
+    padding: 1rem;
+}
+
+main > article {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+main > article:nth-child(1) {
+    background-color: aquamarine;
+}
+main > article:nth-child(2) {
+    background-color: bisque;
+}
+main > article:nth-child(3) {
+    background-color: azure;
+}
+
+main > article:last-child {
+    margin-bottom: 0;
+}
+
+main > article > * {
+    margin-bottom: .5rem;
+}
+
+main > article > *:last-child {
+    margin-bottom: 0;
+}
+
+main > article > figure {
+    width: 100%;
+    aspect-ratio: 5/3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main > article:nth-child(1) > figure {
+    background-image: url('../assets/ljungberg.png');
+}
+
+main > article:nth-child(2) > figure {
+background-image: url('../assets/boardgames.png');
+}
+
+main > article:nth-child(3) > figure {
+    background-image: url('../assets/coding.png');
+}
+
+/* main > article > figure > img {
+    width: 100%;
+    aspect-ratio: 2/1;
+} */
+
+main > article > h2 {
+    font-size: 2.5rem;
+}
+
+main > article > p:first-of-type {
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: red;
+    color: white;
+    padding: 3rem 1rem;
+}
+
+footer > h2 {
+    font-size: 2.5rem;
+    text-align: end;
+}
